@@ -1,4 +1,6 @@
 .img {
+   position: relative;
+   z-index: 2;
   &__inner {
     width: 100%;
     height: 100%;

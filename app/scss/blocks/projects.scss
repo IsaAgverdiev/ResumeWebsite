@@ -1,4 +1,6 @@
 .projects {
+   position: relative;
+   z-index: 2;
   &__inner {
     height: 100%;
     display: flex;
@@ -15,16 +17,85 @@
   &__inner {
     text-align: center;
     height: 100%;
-
+    padding-bottom: 15px;
+    position: relative;
+    cursor: pointer;
   }
+
+  &-1 {
+    position: relative;
+
+    &:hover .project__changeView1 {
+      
+      transform: translateY(0%);
+    }
+  }
+
+  &-2 {
+    position: relative;
+
+    &:hover .project__changeView2 {
+      
+      transform: translateY(0%);
+    }
+  }
+
+  &-3 {
+    position: relative;
+
+    &:hover .project__changeView3 {
+      
+      transform: translateY(0%);
+    }
+  }
+
   &__title {
     margin: 0;
-   padding: 20px 0 10px 0;
+    padding: 20px 0 10px 0;
   }
+
   &__text {
     font-size: $base*6px;
     line-height: 130%;
     width: 80%;
     margin: 0 auto;
   }
+
+  &__changeView {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    transform: translateY(-1000%);
+    z-index: 1;
+    transition: .4s;
+  }
+
+  &__changeView-website,
+  &__changeView-code {
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $base*7px;
+    font-weight: 700;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  &__changeView-website {
+    border-bottom: 1px solid $black;
+  }
+
+  &__changeView-code {}
 }

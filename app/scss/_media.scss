@@ -1,0 +1,227 @@
+@media (max-width: 1563px) {
+  .header {
+    &__inner {
+      padding: 0 25px;
+    }
+  }
+
+  .discr {
+    &__inner {
+      padding: 0 25px;
+      width: 100%;
+    }
+
+    &__text {
+      font-weight: 400;
+    }
+  }
+
+  .skills {
+    &__inner {
+      width: 70%;
+    }
+  }
+
+  .location {
+    &__inner {
+      margin-left: 55px;
+    }
+  }
+
+  .social {
+    &__inner {
+      padding: 0 25px;
+    }
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .location {
+    &__inner {
+      margin-left: 25px;
+    }
+
+    &__item {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1299.98px) {
+  .grid-container {
+    grid-template-columns: 110px 110px 110px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr 4fr 1fr;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .grid-container {
+    grid-template-columns: 110px 110px 110px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 3fr 1fr;
+  }
+
+  .discr {
+    &__text {
+      font-size: 24px;
+    }
+  }
+
+  .skills {
+    &__inner {
+      padding-bottom: 20px;
+      margin-top: 0px;
+    }
+
+    &__title {
+      margin-top: 20px;
+    }
+
+    &__item {
+      font-size: 20px;
+    }
+  }
+
+  .project {
+    &__text {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 350px 200px 2fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header header header header header header header header header header"
+      "discr discr discr discr discr discr img img img img img img"
+      " skills skills skills skills skills skills location location location location location location"
+      "project-1 project-1 project-1 project-1 project-2 project-2 project-2 project-2 project-3 project-3 project-3 project-3"
+      "social social social social other-projects other-projects other-projects other-projects other-projects other-projects other-projects other-projects"
+  }
+
+  .projects {
+    display: none;
+  }
+
+  .social {
+    &__inner {
+      padding: 15px;
+    }
+  }
+
+  .location {
+    &__inner {
+      margin: 0;
+      padding: 15px;
+    }
+  }
+
+  .skills {
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__inner {
+      padding: 15px;
+      width: 100%;
+    }
+
+    &__title {
+      margin: 0;
+    }
+
+    &__lists {
+      display: block;
+    }
+
+    &__item {
+      display: inline-block;
+    }
+
+    &__item+.skills__item {
+      margin-left: 10px;
+    }
+  }
+}
+
+
+@media (max-width: 799.98px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 75px minmax(250px, 400px) 260px 1fr minmax(75px, 150px);
+  }
+
+  .discr {
+    &__text {
+      font-size: 20px;
+    }
+  }
+
+  .location {
+    &__item {
+      font-size: 17px;
+      margin: 10px 0;
+    }
+  }
+
+  .skills {
+    &__inner {
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    &__title {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    &__lists {
+      display: flex;
+      justify-content: start;
+      flex-direction: row;
+    }
+
+    &__list+.skills__list {
+      margin-left: 50px;
+    }
+
+    &__item {
+      display: block;
+      font-size: 17px;
+    }
+
+    &__item+.skills__item {
+      margin-left: 0;
+    }
+  }
+
+  .project {
+    &__text {
+      font-size: 17px;
+    }
+  }
+  .social {
+    &__inner {
+      // flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 687.98px) {
+ 
+}
+
+
+// @media (max-width: 575.98px) {}

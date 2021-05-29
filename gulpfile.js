@@ -40,6 +40,7 @@ function images () {
 
 function scripts() {
 	return src([
+		'node_modules/winbox/dist/js/winbox.min.js',
 		'app/js/*.js',
 		'!app/js/*.min.js'
 	])
@@ -65,6 +66,7 @@ function styles() {
 function css() {
 	return src([
 		'node_modules/normalize.css/normalize.css',
+		'node_modules/winbox/dist/css/winbox.min.css',
 	 ])
 		.pipe(concat('_libs.scss'))
 		.pipe(dest('app/scss'))
