@@ -1,0 +1,30 @@
+.projects {
+  &__inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    margin: 0;
+  }
+}
+
+.project {
+  &__inner {
+    text-align: center;
+    height: 100%;
+
+  }
+  &__title {
+    margin: 0;
+   padding: 20px 0 10px 0;
+  }
+  &__text {
+    font-size: $base*6px;
+    line-height: 130%;
+    width: 80%;
+    margin: 0 auto;
+  }
+}

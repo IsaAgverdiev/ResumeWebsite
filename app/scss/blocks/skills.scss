@@ -1,0 +1,30 @@
+.skills {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  &__inner {
+    margin-top: 40px;
+    width: 55%;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__list {}
+
+  &__item {
+    font-size: $base*6px;
+  }
+
+  &__item+.skills__item {
+    margin-top: 20px;
+  }
+}

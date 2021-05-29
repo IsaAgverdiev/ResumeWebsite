@@ -1,0 +1,82 @@
+.grid-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.grid-item {
+  background-color: $white;
+  border: 1px solid $black;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 75px minmax(280px, 2fr) 75px minmax(200px, 1fr) 75px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header header header header header header header header header header header header"
+    "discr discr discr discr discr discr img img img skills skills skills"
+    "location location location projects projects projects projects projects projects projects projects projects"
+    "location location location project-1 project-1 project-1 project-2 project-2 project-2 project-3 project-3 project-3"
+    "social social social other-projects other-projects other-projects other-projects other-projects other-projects other-projects other-projects other-projects";
+}
+
+.header {
+  grid-area: header;
+  border-bottom: none;
+}
+
+.discr {
+  grid-area: discr;
+  border-right: none;
+  border-bottom: none;
+}
+
+.img {
+  grid-area: img;
+  border-right: none;
+  border-bottom: none;
+}
+
+.skills {
+  grid-area: skills;
+  border-bottom: none;
+}
+
+.location {
+  grid-area: location;
+  border-right: none;
+  border-bottom: none;
+}
+
+.projects {
+  grid-area: projects;
+  border-bottom: none;
+}
+
+.project-1 {
+  grid-area: project-1;
+  border-right: none;
+  border-bottom: none;
+}
+
+.project-2 {
+  grid-area: project-2;
+  border-right: none;
+  border-bottom: none;
+}
+
+.project-3 {
+  grid-area: project-3;
+  border-bottom: none;
+}
+
+.social {
+  grid-area: social;
+  border-right: none;
+}
+
+.other-projects {
+  grid-area: other-projects;
+}

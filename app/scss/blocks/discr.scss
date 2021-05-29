@@ -1,0 +1,18 @@
+.discr {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  &__inner {
+    padding-left: 50px;
+    width: 80%;
+  }
+  &__text {
+    font-size: $base*8px;
+    font-weight: 700;
+    line-height: 130%;
+    width: 100%;
+  }
+  &__text+.discr__text {
+    margin-top: 20px;
+  }
+}

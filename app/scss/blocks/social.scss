@@ -1,0 +1,23 @@
+.social {
+  &__inner {
+    height: 100%;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__img-vk,
+  &__img-tg,
+  &__img-github,
+  &__img-linkedin {
+    width: 100%;
+    height: 100%;
+
+  }
+}

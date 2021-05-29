@@ -1,0 +1,23 @@
+.other-projects {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    position: relative;
+    font-weight: 400;
+    margin: 0;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 70%;
+      right: -40px;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 24px;
+      background-image: url('../images/down-arrow.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

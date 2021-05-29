@@ -1,0 +1,52 @@
+.location {
+  display: flex;
+  align-items: center;
+
+  &__inner {
+    margin-left: 80px;
+  }
+
+  &__item {
+    font-size: $base*7px;
+    margin: 24px 0;
+    color: $black;
+  }
+
+  &__item:first-child,
+  &__item:nth-child(2),
+  &__item:last-child {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -40px;
+      top: 50%;
+      margin-right: 36px;
+      width: 28px;
+      height: 28px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__item:first-child {
+    &::before {
+      background-image: url('../images/location/city.svg');
+    }
+  }
+
+  &__item:nth-child(2) {
+    &::before {
+      background-image: url('../images/location/tel.svg');
+    }
+  }
+
+  &__item:last-child {
+    &::before {
+      background-image: url('../images/location/mail.svg');
+    }
+  }
+}
