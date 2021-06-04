@@ -1,17 +1,19 @@
 .header {
   position: relative;
+  min-height: 75px;
   z-index: 5;
 
   &__inner {
-    height: 100%;
-    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 75px;
+    padding: 0 50px;
   }
 
   &__logo-text,
   &__download-resume {
+    align-items: center;
     font-size: $base*7px;
     font-weight: 700;
   }
@@ -30,7 +32,7 @@
     }
 
     &:hover {
-      color: #a200ff;
+      color: $secondary;
     }
   }
 }

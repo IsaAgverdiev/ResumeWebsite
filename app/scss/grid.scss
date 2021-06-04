@@ -81,3 +81,25 @@
 .other-projects {
   grid-area: other-projects;
 }
+
+
+
+
+.grid-container__projects {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  // gap: 1px;
+
+  .project {
+    border: 1px solid $black;
+  }
+
+  .project:nth-child(odd) {
+    border-right: none;
+  }
+  .project:nth-child(-n+4) {
+    border-bottom: none;
+  }
+}

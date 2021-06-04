@@ -1,26 +1,27 @@
 .other-projects {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   z-index: 5;
+
+  &__inner {
+    min-height: 100%;
+    height: 75px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-family: 'Jost', sans-serif;
+    color: $black;
+  }
 
   &__title {
     position: relative;
     font-weight: 400;
     margin: 0;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 70%;
-      right: -40px;
-      transform: translateY(-50%);
-      width: 26px;
-      height: 24px;
-      background-image: url('../images/down-arrow.svg');
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
   }
 }

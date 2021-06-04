@@ -12,7 +12,7 @@
     <div class="grid-container">
       <header class="header grid-item">
         <div class="header__inner">
-          <div class="header__logo"><span class="header__logo-text">AGVERDIEV</span></div>
+          <a href="index.html" class="header__logo"><span class="header__logo-text">AGVERDIEV</span></a>
           <a download href="images/IsaAgverdiev.pdf" class="header__download-resume">
             <span>Скачать резюме</span></a>
         </div>
@@ -72,8 +72,8 @@
           <h1 class="project__title title">PureBank</h1>
           <p class="project__text">Лэндинг для банка, офрмоление карты 2в1&nbsp;Дебетовая/Кредитная</p>
           <div class="project__changeView project__changeView1">
-            <a href="#" class="project__changeView-website">Сайт</a>
-            <a href="#" class="project__changeView-code">Код</a>
+            <button class="project__changeView-website" id="btn-project-1">Сайт</button>
+            <a href="https://github.com/IsaAgverdiev/PureBank" class="project__changeView-code" target="_blank">Код</a>
           </div>
         </div>
       </div>
@@ -83,8 +83,8 @@
           <p class="project__text">Многостраничный сайт для стримера на&nbsp;Twitch для введения статистики ивентов и&nbsp;информации по&nbsp;стримам.</p>
         </div>
         <div class="project__changeView project__changeView2">
-          <a href="#" class="project__changeView-website">Сайт</a>
-            <a href="#" class="project__changeView-code">Код</a>
+          <button class="project__changeView-website" id="btn-project-2">Сайт</button>
+            <a href="https://github.com/IsaAgverdiev/Shirogo" class="project__changeView-code" target="_blank">Код</a>
         </div>
       </div>
       <div class="project project-3 grid-item">
@@ -93,8 +93,8 @@
           <p class="project__text">Лэндинг для компании по&nbsp;аренде и&nbsp;продаже офисов в&nbsp;БЦ на&nbsp;Тульской</p>
         </div>
         <div class="project__changeView project__changeView3">
-          <a href="#" class="project__changeView-website">Сайт</a>
-          <a href="#" class="project__changeView-code">Код</a>
+          <button class="project__changeView-website" id="btn-project-3">Сайт</button>
+          <a href="https://github.com/IsaAgverdiev/MyOffice" class="project__changeView-code" target="_blank">Код</a>
         </div>
       </div>
       <div class="social grid-item">
@@ -122,7 +122,11 @@
         </div>
       </div>
       <div class="other-projects grid-item">
-        <h1 class="other-projects__title title">Посмотреть проекты</h1>
+        <div class="other-projects__inner">
+          <a class="other-projects__link" href="projects.html">
+            <span class="other-projects__title title">Посмотреть другие проекты</span>
+          </a>
+        </div>
       </div>
     </div>
   </body>
