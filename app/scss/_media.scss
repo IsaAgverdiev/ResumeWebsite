@@ -94,18 +94,23 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 350px 200px 2fr 1fr;
+    grid-template-rows: 75px 350px 200px 75px 1fr minmax(75px, 150px);
     gap: 0px 0px;
     grid-template-areas:
       "header header header header header header header header header header header header"
       "discr discr discr discr discr discr img img img img img img"
-      " skills skills skills skills skills skills location location location location location location"
+      "skills skills skills skills skills skills location location location location location location"
+      "projects projects projects projects projects projects projects projects projects projects projects projects"
       "project-1 project-1 project-1 project-1 project-2 project-2 project-2 project-2 project-3 project-3 project-3 project-3"
       "social social social social other-projects other-projects other-projects other-projects other-projects other-projects other-projects other-projects"
   }
 
   .projects {
-    display: none;
+    padding: 10px 0;
+  }
+
+  .img {
+    border-right: 1px solid $black;
   }
 
   .social {
@@ -115,6 +120,8 @@
   }
 
   .location {
+    border-right: 1px solid $black;
+
     &__inner {
       margin: 0;
       padding: 15px;
@@ -145,7 +152,7 @@
     }
 
     &__item+.skills__item {
-      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 }
@@ -156,11 +163,6 @@
     font-size: 24px;
   }
 
-  .grid-container {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 75px minmax(250px, 400px) 260px 1fr minmax(75px, 150px);
-  }
-
   .discr {
     &__text {
       font-size: 20px;
@@ -168,60 +170,140 @@
   }
 
   .location {
+    align-items: flex-start;
+    min-width: auto;
+
     &__item {
-      font-size: 17px;
+      font-size: 20px;
       margin: 10px 0;
     }
   }
 
   .skills {
+    align-items: flex-start;
+
     &__inner {
       margin-top: 0px;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
     }
 
     &__title {
       text-align: left;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
     }
 
-    &__lists {
-      display: flex;
-      justify-content: start;
-      flex-direction: row;
-    }
-
-    &__list+.skills__list {
-      margin-left: 50px;
-    }
-
-    &__item {
-      display: block;
-      font-size: 17px;
-    }
-
-    &__item+.skills__item {
-      margin-left: 0;
-    }
   }
 
   .project {
     &__text {
       font-size: 17px;
+      width: 100%;
+      margin: 0;
+      padding: 0 10px;
     }
   }
+
   .social {
     &__inner {
-      // flex-wrap: wrap;
+      flex-wrap: wrap;
     }
+
+    &__link {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+}
+
+@media (max-width: 598.98px) {
+  .grid-container {
+    display: block;
+  }
+
+  .header {
+    height: 70px;
+  }
+
+  .discr {
+    border-right: 1px solid $black;
+
+    &__inner {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .img {
+    height: 300px;
+
+    &__face {}
+  }
+
+  .skills {
+    border-right: 1px solid $black;
+  }
+
+  .social {
+    border-right: 1px solid $black;
+
+    &__inner {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .projects {
+     border-bottom: 1px solid lighten($black, 60%);
+     border-bottom: 1px solid lighten($black, 30%);
+  }
+
+  .project {
+    &__inner {
+      text-align: left;
+      padding: 15px;
+    }
+
+    &__title {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__text {
+      line-height: 130%;
+      width: 100%;
+      padding-left: 0;
+      margin: 0;
+    }
+  }
+
+  .project-1 {
+    border-top: none;
+    border-right: 1px solid $black;
+
+  }
+
+  .project-2 {
+    border-right: 1px solid $black;
+    border-top: 1px solid lighten($black, 60%);
+  }
+
+  .project-3 {
+    border-top: 1px solid lighten($black, 60%);
+  }
+
+  .other-projects {
+    border-top: none;
+    min-height: 75px;
   }
 }
 
-@media (max-width: 687.98px) {
- 
+@media (max-width: 575.98px) {
+  .header {
+    &__logo {
+      display: none;
+    }
+    &__download-resume {
+      width: 100%;
+    }
+  }
 }
-
-
-// @media (max-width: 575.98px) {}

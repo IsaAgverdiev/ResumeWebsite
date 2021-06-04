@@ -1,6 +1,6 @@
 .projects {
    position: relative;
-   z-index: 2;
+   z-index: 5;
   &__inner {
     height: 100%;
     display: flex;
@@ -24,6 +24,7 @@
 
   &-1 {
     position: relative;
+     z-index: 4;
 
     &:hover .project__changeView1 {
       
@@ -33,6 +34,7 @@
 
   &-2 {
     position: relative;
+    z-index: 3;
 
     &:hover .project__changeView2 {
       

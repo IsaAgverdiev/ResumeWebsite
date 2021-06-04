@@ -3,14 +3,14 @@
   justify-content: start;
   align-items: center;
   position: relative;
-  z-index: 2;
+  z-index: 5;
   &__inner {
     padding-left: 50px;
     width: 80%;
   }
   &__text {
     font-size: $base*8px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 130%;
     width: 100%;
   }
