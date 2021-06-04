@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100vh;
 }
 
 *,
@@ -12,6 +13,8 @@ body {
   font-family: 'Jost', sans-serif;
   color: $black;
   overflow-x: hidden;
+  height: 100%;
+
 }
 
 p {
@@ -60,5 +63,9 @@ a[href^="mailto:"] {
 }
 
 span.wb-full {
+  display: none;
+}
+
+.hide {
   display: none;
 }

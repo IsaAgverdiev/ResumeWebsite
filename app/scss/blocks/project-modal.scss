@@ -1,0 +1,90 @@
+.project-modal {
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $black;
+  background-color: rgba($black, .5s);
+
+  &__body {
+    position: relative;
+    padding: 20px;
+    border: 1px solid $black;
+    background-color: $white;
+    margin: 30px auto;
+    width: 50%;
+    height: 80%;
+    font-size: 18px;
+    color: $black;
+    overflow: auto;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__links {
+    margin: 15px 0;
+  }
+
+  &__link {
+    color: $primary;
+
+    &:nth-child(2) {
+      color: $secondary;
+    }
+  }
+
+  &__link+.project-modal__link {
+    margin-left: 20px;
+  }
+
+  &__discr {
+    margin-bottom: 15px;
+  }
+
+  &__work {
+    margin-top: 15px;
+  }
+
+  &__task-title,
+  &__work-title,
+  &__tools-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  &__work-list,
+  &__tools-list {
+    padding-left: 26px;
+  }
+
+  &__work-item,
+  &__tools-item {
+    list-style-type: dot;
+    margin: 5px 0;
+  }
+
+  &__tools {
+    margin-top: 15px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+    border: none;
+    background-image: url();
+    font-size: 30px;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+  }
+}

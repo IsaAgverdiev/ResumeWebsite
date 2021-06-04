@@ -82,15 +82,11 @@
   grid-area: other-projects;
 }
 
-
-
-
 .grid-container__projects {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  // gap: 1px;
 
   .project {
     border: 1px solid $black;
