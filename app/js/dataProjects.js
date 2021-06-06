@@ -18,7 +18,7 @@ const projects = {
     status: "Находитсья в стадии разработки",
   },
   Shirogo: {
-    title: "Shirogo`s room",
+    title: "Shirogo",
     URL: "https://isaagverdiev.github.io/Shirogo/",
     repositories: "https://github.com/IsaAgverdiev/Shirogo",
     discr: "Многостраничный сайт для стримера на Twitch для введения статистики ивентов и информации по стримам.",
@@ -80,8 +80,8 @@ const projects = {
     repositories: "https://github.com/IsaAgverdiev/KoreanCrem",
     discr: "Интернет-магазин корейской комсметики",
     task: "Нужно сверстать по готовому дизайн-макету",
-    work: "",
-    tools: "",
+    work: ['Сверстана главная страница'],
+    tools: ["Html", "Scss", "Gulp", "JavaScript"],
     status: "Находитсья в стадии разработки",
   },
 };

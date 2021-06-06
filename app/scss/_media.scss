@@ -217,7 +217,13 @@
       justify-content: center;
     }
   }
-
+   .project-modal {
+     &__body {
+       padding: 50px;
+       width: 100%;
+       height: 100%;
+     }
+   }
 }
 
 @media (max-width: 598.98px) {
@@ -297,6 +303,7 @@
     border-top: none;
     min-height: 75px;
   }
+
 }
 
 @media (max-width: 575.98px) {
@@ -319,6 +326,10 @@
     .project {
       border: 1px solid $black;
       border-bottom: none;
+
+      &__title {
+        margin-bottom: 10px;
+      }
     }
 
     .project:nth-child(odd) {
@@ -327,6 +338,14 @@
 
     .project:last-child {
       border-bottom: 1px solid $black;
+    }
+  }
+
+  .project-modal {
+    &__body {
+      padding: 10px;
+      width: 100%;
+      height: 100%;
     }
   }
 }

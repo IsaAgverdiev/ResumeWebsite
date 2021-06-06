@@ -17,7 +17,8 @@
     background-color: $white;
     margin: 30px auto;
     width: 50%;
-    height: 80%;
+    min-height: 500px;
+    height: auto;
     font-size: 18px;
     color: $black;
     overflow: auto;
@@ -28,14 +29,25 @@
   }
 
   &__links {
-    margin: 15px 0;
+    margin: 25px 0;
   }
 
   &__link {
-    color: $primary;
+    border: 1px solid $black;
+    font-weight: 400;
+    padding: 5px 25px;
+    transition: .2s;
+
+    &:hover {
+      color: $primary;
+      border: 1px solid $primary;
+    }
 
     &:nth-child(2) {
-      color: $secondary;
+      &:hover {
+        color: $secondary;
+        border: 1px solid $secondary;
+      }
     }
   }
 
@@ -44,17 +56,17 @@
   }
 
   &__discr {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   &__work {
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   &__task-title,
   &__work-title,
   &__tools-title {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 5px;
   }
 
@@ -70,7 +82,7 @@
   }
 
   &__tools {
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   &__btn {
