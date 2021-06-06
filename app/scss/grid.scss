@@ -90,6 +90,18 @@
 
   .project {
     border: 1px solid $black;
+    &__inner {
+      padding: 30px 50px;
+      text-align: left;
+    }
+    &__title {
+      padding-top: 0;
+    }
+    &__text {
+      margin: 0;
+      width: 80%;
+      padding: 0;
+    }
   }
 
   .project:nth-child(odd) {
