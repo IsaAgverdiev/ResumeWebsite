@@ -15,7 +15,7 @@ const projects = {
       "Форма оформления карты",
     ],
     tools: ["Html", "Scss", "Gulp", "JavaScript"],
-    status: "Находитсья в стадии разработки",
+    status: "в разработке",
   },
   Shirogo: {
     title: "Shirogo",
@@ -31,7 +31,7 @@ const projects = {
       "Написаны скрипты для модальных окон",
     ],
     tools: ["Html", "Scss", "Gulp", "JavaScript", "jQuery", "Slick-slider"],
-    status: "Проект завершен",
+    status: "завершен",
   },
   MyOffice: {
     title: "MyOffice",
@@ -46,7 +46,7 @@ const projects = {
       "Написан скрип для бургер меню",
     ],
     tools: ["Html", "Scss", "Gulp", "JavaScript", "jQuery", "Magnific Popup"],
-    status: "Проект завершен",
+    status: "завершен",
   },
   ResumeWebsite: {
     title: "ResumeWebsite",
@@ -62,7 +62,7 @@ const projects = {
       "Адаптивная верстка на основе медиа-запросов на мобильные экраны.",
     ],
     tools: ["Html", "Scss", "Gulp", "JavaScript", "WinBox.js"],
-    status: "Проект завершен",
+    status: "завершен",
   },
   Desire: {
     title: "Desire",
@@ -72,7 +72,7 @@ const projects = {
     task: "Нужно сверстать многостраничный сайт",
     work: ["Была выполнена валидная, кроссбраузерная верстка 6 страниц", "Адаптивная верстка на основе медиа-запросов на мобильные экраны.", "Подключение и настройка плагинов slisk-slider, fancybox, mixitup", "написание скрипта бокового меню"],
     tools: ["Html", "Scss", "Gulp", "JavaScript", "jQuery", "slick-slider", "fancybox", "mixitup"],
-    status: "Проект завершен",
+    status: "завершен",
   },
   KoreaCrem: {
     title: "KoreaCrem",
@@ -80,8 +80,8 @@ const projects = {
     repositories: "https://github.com/IsaAgverdiev/KoreanCrem",
     discr: "Интернет-магазин корейской комсметики",
     task: "Нужно сверстать по готовому дизайн-макету",
-    work: ['Сверстана главная страница'],
+    work: ["Сверстана главная страница"],
     tools: ["Html", "Scss", "Gulp", "JavaScript"],
-    status: "Находитсья в стадии разработки",
+    status: "в разработке",
   },
 };

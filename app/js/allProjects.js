@@ -44,6 +44,7 @@ function createModal(WebsiteName) {
 
   let templates = `
       <h1 class="project-modal__title">${projects[WebsiteName].title}</h1>
+      <span class="project-modal__status">статус проекта: ${projects[WebsiteName].status}</span>
       <div class="project-modal__links">
         <a class="project-modal__link project-modal__website" href=${projects[WebsiteName].URL} target="_blank">Сайт</a>
         <a class="project-modal__link project-modal__code" href=${projects[WebsiteName].repositories} target="_blank">Код</a>
