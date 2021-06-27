@@ -1,13 +1,12 @@
 .grid-container {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .grid-item {
   background-color: $white;
   border: 1px solid $black;
 }
-
 
 .grid-container {
   display: grid;
@@ -25,6 +24,7 @@
 .header {
   grid-area: header;
   border-bottom: none;
+  border-top: none;
 }
 
 .discr {
@@ -107,7 +107,7 @@
   .project:nth-child(odd) {
     border-right: none;
   }
-  .project:nth-child(-n+4) {
+  .project:nth-child(-n + 4) {
     border-bottom: none;
   }
 }

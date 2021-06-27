@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  height: 100vh;
 }
 
 *,
@@ -10,11 +9,9 @@ html {
 }
 
 body {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   color: $black;
   overflow-x: hidden;
-  height: 100%;
-
 }
 
 p {
@@ -59,7 +56,7 @@ a[href^="mailto:"] {
 }
 
 .title {
-  font-size: $base*8px;
+  font-size: $base * 8px;
 }
 
 span.wb-full {
