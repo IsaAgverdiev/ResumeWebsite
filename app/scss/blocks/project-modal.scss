@@ -5,10 +5,12 @@
   right: 0;
   left: 0;
   bottom: 0;
+  display: none;
   width: 100%;
   height: 100%;
   border: 1px solid $black;
   background-color: rgba($black, .5s);
+  overflow: auto;
 
   &__body {
     position: relative;
@@ -17,11 +19,10 @@
     background-color: $white;
     margin: 30px auto;
     width: 50%;
-    min-height: 500px;
-    height: auto;
     font-size: 18px;
     color: $black;
     overflow: auto;
+    z-index: 8;
   }
 
   &__title {
@@ -30,7 +31,7 @@
 
   &__status {
     font-size: 17px;
-    color: rgb(170, 170, 170);
+    color:#4BB543;
   }
 
   &__links {
@@ -41,7 +42,7 @@
     border: 1px solid $black;
     font-weight: 400;
     padding: 5px 25px;
-    transition: .2s;
+    transition: border .2s;
 
     &:hover {
       color: $primary;
